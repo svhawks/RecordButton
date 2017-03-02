@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1033A9094D3698B0A1E27DC8 /* Pods_RecordButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE66ACF2BCE0008E239D9D44 /* Pods_RecordButton.framework */; };
+		A58E81101E08BB00001DF1EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E810F1E08BB00001DF1EA /* AppDelegate.swift */; };
+		A58E81141E08BB00001DF1EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E81131E08BB00001DF1EA /* ViewController.swift */; };
+		A58E81171E08BB00001DF1EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58E81151E08BB00001DF1EA /* Main.storyboard */; };
+		A58E81191E08BB00001DF1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A58E81181E08BB00001DF1EA /* Assets.xcassets */; };
+		A58E811C1E08BB00001DF1EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58E811A1E08BB00001DF1EA /* LaunchScreen.storyboard */; };
+		A58E81261E08BB78001DF1EA /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E81251E08BB78001DF1EA /* RecordButton.swift */; };
+		A58E81571E091986001DF1EA /* RecordButtonKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E81561E091986001DF1EA /* RecordButtonKit.swift */; };
+		A59ACDF11E68ADA000A09BF1 /* ButtonPress.caf in Resources */ = {isa = PBXBuildFile; fileRef = A59ACDF01E68ABF500A09BF1 /* ButtonPress.caf */; };
+		CF52236035C3F36BBFF53AC7 /* Pods_RecordButtonTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6C1B1A47EA4C9F4DCE2EE0 /* Pods_RecordButtonTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AB0B92FFAA2521BC6A4F36C /* Pods-RecordButtonTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButtonTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButtonTest/Pods-RecordButtonTest.release.xcconfig"; sourceTree = "<group>"; };
+		0CAB4A075CD2B5EB18E71F2C /* Pods-RecordButtonTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButtonTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButtonTest/Pods-RecordButtonTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A58E810C1E08BB00001DF1EA /* RecordButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A58E810F1E08BB00001DF1EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A58E81131E08BB00001DF1EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A58E81161E08BB00001DF1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A58E81181E08BB00001DF1EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A58E811B1E08BB00001DF1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A58E811D1E08BB00001DF1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A58E81251E08BB78001DF1EA /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		A58E81551E09136C001DF1EA /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		A58E81561E091986001DF1EA /* RecordButtonKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButtonKit.swift; sourceTree = "<group>"; };
+		A59ACDF01E68ABF500A09BF1 /* ButtonPress.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonPress.caf; sourceTree = "<group>"; };
+		C281DB93D97512AFB6450BCB /* Pods-RecordButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButton/Pods-RecordButton.debug.xcconfig"; sourceTree = "<group>"; };
+		DE66ACF2BCE0008E239D9D44 /* Pods_RecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1DE39CE0BA80D5317103166 /* Pods-RecordButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButton/Pods-RecordButton.release.xcconfig"; sourceTree = "<group>"; };
+		FB6C1B1A47EA4C9F4DCE2EE0 /* Pods_RecordButtonTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecordButtonTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A58E81091E08BB00001DF1EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF52236035C3F36BBFF53AC7 /* Pods_RecordButtonTest.framework in Frameworks */,
+				1033A9094D3698B0A1E27DC8 /* Pods_RecordButton.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14A72DE2659ECC4C3BE92907 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB6C1B1A47EA4C9F4DCE2EE0 /* Pods_RecordButtonTest.framework */,
+				DE66ACF2BCE0008E239D9D44 /* Pods_RecordButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A58E81031E08BB00001DF1EA = {
+			isa = PBXGroup;
+			children = (
+				A58E810E1E08BB00001DF1EA /* RecordButton */,
+				A58E810D1E08BB00001DF1EA /* Products */,
+				E7C3E8623351DF214A6A200E /* Pods */,
+				14A72DE2659ECC4C3BE92907 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A58E810D1E08BB00001DF1EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A58E810C1E08BB00001DF1EA /* RecordButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A58E810E1E08BB00001DF1EA /* RecordButton */ = {
+			isa = PBXGroup;
+			children = (
+				A58E810F1E08BB00001DF1EA /* AppDelegate.swift */,
+				A58E81131E08BB00001DF1EA /* ViewController.swift */,
+				A58E81251E08BB78001DF1EA /* RecordButton.swift */,
+				A58E81561E091986001DF1EA /* RecordButtonKit.swift */,
+				A58E81151E08BB00001DF1EA /* Main.storyboard */,
+				A59ACDF01E68ABF500A09BF1 /* ButtonPress.caf */,
+				A58E81551E09136C001DF1EA /* bridge.h */,
+				A58E81181E08BB00001DF1EA /* Assets.xcassets */,
+				A58E811A1E08BB00001DF1EA /* LaunchScreen.storyboard */,
+				A58E811D1E08BB00001DF1EA /* Info.plist */,
+			);
+			path = RecordButton;
+			sourceTree = "<group>";
+		};
+		E7C3E8623351DF214A6A200E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CAB4A075CD2B5EB18E71F2C /* Pods-RecordButtonTest.debug.xcconfig */,
+				0AB0B92FFAA2521BC6A4F36C /* Pods-RecordButtonTest.release.xcconfig */,
+				C281DB93D97512AFB6450BCB /* Pods-RecordButton.debug.xcconfig */,
+				E1DE39CE0BA80D5317103166 /* Pods-RecordButton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A58E810B1E08BB00001DF1EA /* RecordButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A58E81201E08BB00001DF1EA /* Build configuration list for PBXNativeTarget "RecordButton" */;
+			buildPhases = (
+				C5C4C470D671BF244750E06A /* [CP] Check Pods Manifest.lock */,
+				A58E81081E08BB00001DF1EA /* Sources */,
+				A58E81091E08BB00001DF1EA /* Frameworks */,
+				A58E810A1E08BB00001DF1EA /* Resources */,
+				0C82F803DA8A6D70F07318D4 /* [CP] Embed Pods Frameworks */,
+				C0BFE35855207FE025209D6C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecordButton;
+			productName = RecordButtonTest;
+			productReference = A58E810C1E08BB00001DF1EA /* RecordButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A58E81041E08BB00001DF1EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Late Night Software Ltd.";
+				TargetAttributes = {
+					A58E810B1E08BB00001DF1EA = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A58E81071E08BB00001DF1EA /* Build configuration list for PBXProject "RecordButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A58E81031E08BB00001DF1EA;
+			productRefGroup = A58E810D1E08BB00001DF1EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A58E810B1E08BB00001DF1EA /* RecordButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A58E810A1E08BB00001DF1EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59ACDF11E68ADA000A09BF1 /* ButtonPress.caf in Resources */,
+				A58E811C1E08BB00001DF1EA /* LaunchScreen.storyboard in Resources */,
+				A58E81191E08BB00001DF1EA /* Assets.xcassets in Resources */,
+				A58E81171E08BB00001DF1EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C82F803DA8A6D70F07318D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecordButton/Pods-RecordButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0BFE35855207FE025209D6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecordButton/Pods-RecordButton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C4C470D671BF244750E06A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A58E81081E08BB00001DF1EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A58E81141E08BB00001DF1EA /* ViewController.swift in Sources */,
+				A58E81101E08BB00001DF1EA /* AppDelegate.swift in Sources */,
+				A58E81571E091986001DF1EA /* RecordButtonKit.swift in Sources */,
+				A58E81261E08BB78001DF1EA /* RecordButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A58E81151E08BB00001DF1EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A58E81161E08BB00001DF1EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A58E811A1E08BB00001DF1EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A58E811B1E08BB00001DF1EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A58E811E1E08BB00001DF1EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A58E811F1E08BB00001DF1EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A58E81211E08BB00001DF1EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C281DB93D97512AFB6450BCB /* Pods-RecordButton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RecordButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.RecordButtonTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = RecordButton/bridge.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A58E81221E08BB00001DF1EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1DE39CE0BA80D5317103166 /* Pods-RecordButton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RecordButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.latenightsw.RecordButtonTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = RecordButton/bridge.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A58E81071E08BB00001DF1EA /* Build configuration list for PBXProject "RecordButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A58E811E1E08BB00001DF1EA /* Debug */,
+				A58E811F1E08BB00001DF1EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A58E81201E08BB00001DF1EA /* Build configuration list for PBXNativeTarget "RecordButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A58E81211E08BB00001DF1EA /* Debug */,
+				A58E81221E08BB00001DF1EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A58E81041E08BB00001DF1EA /* Project object */;
+}
