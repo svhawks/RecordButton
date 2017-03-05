@@ -16,12 +16,9 @@
 		A58E81261E08BB78001DF1EA /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E81251E08BB78001DF1EA /* RecordButton.swift */; };
 		A58E81571E091986001DF1EA /* RecordButtonKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E81561E091986001DF1EA /* RecordButtonKit.swift */; };
 		A59ACDF11E68ADA000A09BF1 /* ButtonPress.caf in Resources */ = {isa = PBXBuildFile; fileRef = A59ACDF01E68ABF500A09BF1 /* ButtonPress.caf */; };
-		CF52236035C3F36BBFF53AC7 /* Pods_RecordButtonTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6C1B1A47EA4C9F4DCE2EE0 /* Pods_RecordButtonTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0AB0B92FFAA2521BC6A4F36C /* Pods-RecordButtonTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButtonTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButtonTest/Pods-RecordButtonTest.release.xcconfig"; sourceTree = "<group>"; };
-		0CAB4A075CD2B5EB18E71F2C /* Pods-RecordButtonTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButtonTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButtonTest/Pods-RecordButtonTest.debug.xcconfig"; sourceTree = "<group>"; };
 		A58E810C1E08BB00001DF1EA /* RecordButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A58E810F1E08BB00001DF1EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A58E81131E08BB00001DF1EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,7 +33,6 @@
 		C281DB93D97512AFB6450BCB /* Pods-RecordButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButton/Pods-RecordButton.debug.xcconfig"; sourceTree = "<group>"; };
 		DE66ACF2BCE0008E239D9D44 /* Pods_RecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DE39CE0BA80D5317103166 /* Pods-RecordButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButton/Pods-RecordButton.release.xcconfig"; sourceTree = "<group>"; };
-		FB6C1B1A47EA4C9F4DCE2EE0 /* Pods_RecordButtonTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecordButtonTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF52236035C3F36BBFF53AC7 /* Pods_RecordButtonTest.framework in Frameworks */,
 				1033A9094D3698B0A1E27DC8 /* Pods_RecordButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,7 +50,6 @@
 		14A72DE2659ECC4C3BE92907 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB6C1B1A47EA4C9F4DCE2EE0 /* Pods_RecordButtonTest.framework */,
 				DE66ACF2BCE0008E239D9D44 /* Pods_RecordButton.framework */,
 			);
 			name = Frameworks;
@@ -99,8 +93,6 @@
 		E7C3E8623351DF214A6A200E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0CAB4A075CD2B5EB18E71F2C /* Pods-RecordButtonTest.debug.xcconfig */,
-				0AB0B92FFAA2521BC6A4F36C /* Pods-RecordButtonTest.release.xcconfig */,
 				C281DB93D97512AFB6450BCB /* Pods-RecordButton.debug.xcconfig */,
 				E1DE39CE0BA80D5317103166 /* Pods-RecordButton.release.xcconfig */,
 			);
