@@ -15,7 +15,8 @@ class RecordButton: UIButton {
     
     
     private weak var tweenOperation : PRTweenOperation?
-    private var buttonPlayer : AVAudioPlayer?
+    private var startPlayer : AVAudioPlayer?
+    private var stopPlayer : AVAudioPlayer?
     private var isRecordingScale : CGFloat = 1.0 {
         didSet {
             setNeedsDisplay()
@@ -56,10 +57,15 @@ class RecordButton: UIButton {
     override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {
         let result = super.beginTracking(touch, with: event)
         
-        if playSounds && buttonPlayer == nil {
+        if playSounds && startPlayer == nil {
             DispatchQueue.main.async { [weak self] in
-                let buttonPressURL = Bundle.main.url(forResource: "ButtonPress", withExtension: "caf")!
-                self?.buttonPlayer = try? AVAudioPlayer(contentsOf: buttonPressURL)
+                let startURL = Bundle.main.url(forResource: "StartRecording", withExtension: "aiff")!
+                let stopURL = Bundle.main.url(forResource: "StopRecording", withExtension: "aiff")!
+                
+                self?.startPlayer = try? AVAudioPlayer(contentsOf: startURL)
+                self?.startPlayer?.prepareToPlay()
+                self?.stopPlayer = try? AVAudioPlayer(contentsOf: stopURL)
+                self?.stopPlayer?.prepareToPlay()
             }
         }
         return result
@@ -67,7 +73,12 @@ class RecordButton: UIButton {
     
     override func sendAction(_ action: Selector, to target: Any?, for event: UIEvent?) {
         if playSounds {
-            buttonPlayer?.play()
+            if isRecording {
+                stopPlayer?.play()
+            }
+            else {
+                startPlayer?.play()
+            }
         }
         isRecording = !isRecording
         super.sendAction(action, to: target, for: event)

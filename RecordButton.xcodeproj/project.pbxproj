@@ -15,7 +15,8 @@
 		A58E811C1E08BB00001DF1EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58E811A1E08BB00001DF1EA /* LaunchScreen.storyboard */; };
 		A58E81261E08BB78001DF1EA /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E81251E08BB78001DF1EA /* RecordButton.swift */; };
 		A58E81571E091986001DF1EA /* RecordButtonKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E81561E091986001DF1EA /* RecordButtonKit.swift */; };
-		A59ACDF11E68ADA000A09BF1 /* ButtonPress.caf in Resources */ = {isa = PBXBuildFile; fileRef = A59ACDF01E68ABF500A09BF1 /* ButtonPress.caf */; };
+		A59ACDFE1E6CD7EE00A09BF1 /* StartRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = A59ACDFC1E6CD7EE00A09BF1 /* StartRecording.aiff */; };
+		A59ACDFF1E6CD7EE00A09BF1 /* StopRecording.aiff in Resources */ = {isa = PBXBuildFile; fileRef = A59ACDFD1E6CD7EE00A09BF1 /* StopRecording.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,8 @@
 		A58E81251E08BB78001DF1EA /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		A58E81551E09136C001DF1EA /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 		A58E81561E091986001DF1EA /* RecordButtonKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButtonKit.swift; sourceTree = "<group>"; };
-		A59ACDF01E68ABF500A09BF1 /* ButtonPress.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ButtonPress.caf; sourceTree = "<group>"; };
+		A59ACDFC1E6CD7EE00A09BF1 /* StartRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StartRecording.aiff; sourceTree = "<group>"; };
+		A59ACDFD1E6CD7EE00A09BF1 /* StopRecording.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = StopRecording.aiff; sourceTree = "<group>"; };
 		C281DB93D97512AFB6450BCB /* Pods-RecordButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButton/Pods-RecordButton.debug.xcconfig"; sourceTree = "<group>"; };
 		DE66ACF2BCE0008E239D9D44 /* Pods_RecordButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecordButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DE39CE0BA80D5317103166 /* Pods-RecordButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButton/Pods-RecordButton.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,7 +83,8 @@
 				A58E81251E08BB78001DF1EA /* RecordButton.swift */,
 				A58E81561E091986001DF1EA /* RecordButtonKit.swift */,
 				A58E81151E08BB00001DF1EA /* Main.storyboard */,
-				A59ACDF01E68ABF500A09BF1 /* ButtonPress.caf */,
+				A59ACDFC1E6CD7EE00A09BF1 /* StartRecording.aiff */,
+				A59ACDFD1E6CD7EE00A09BF1 /* StopRecording.aiff */,
 				A58E81551E09136C001DF1EA /* bridge.h */,
 				A58E81181E08BB00001DF1EA /* Assets.xcassets */,
 				A58E811A1E08BB00001DF1EA /* LaunchScreen.storyboard */,
@@ -161,8 +164,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59ACDF11E68ADA000A09BF1 /* ButtonPress.caf in Resources */,
+				A59ACDFF1E6CD7EE00A09BF1 /* StopRecording.aiff in Resources */,
 				A58E811C1E08BB00001DF1EA /* LaunchScreen.storyboard in Resources */,
+				A59ACDFE1E6CD7EE00A09BF1 /* StartRecording.aiff in Resources */,
 				A58E81191E08BB00001DF1EA /* Assets.xcassets in Resources */,
 				A58E81171E08BB00001DF1EA /* Main.storyboard in Resources */,
 			);
