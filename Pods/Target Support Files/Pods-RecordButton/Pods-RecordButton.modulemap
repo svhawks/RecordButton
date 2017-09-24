@@ -1,6 +1,0 @@
-framework module Pods_RecordButton {
-  umbrella header "Pods-RecordButton-umbrella.h"
-
-  export *
-  module * { export * }
-}

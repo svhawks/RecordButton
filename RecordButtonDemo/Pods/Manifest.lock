@@ -1,0 +1,19 @@
+PODS:
+  - PRTween (0.0.1)
+  - RecordButton (0.0.1):
+    - PRTween (~> 0.0.1)
+
+DEPENDENCIES:
+  - RecordButton (from `../`)
+
+EXTERNAL SOURCES:
+  RecordButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PRTween: b5f4a594f65f4198eb68e2ef3cf72f3390f037b8
+  RecordButton: 73769135050ffb9060f5f3383f2b2764013e2df3
+
+PODFILE CHECKSUM: e51ecf63ce6dc12f85013af38516e51b1ddebc9d
+
+COCOAPODS: 1.3.1

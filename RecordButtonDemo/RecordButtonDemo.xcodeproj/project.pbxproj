@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C20DAE01F77836A003FC9A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20DADF1F77836A003FC9A3 /* AppDelegate.swift */; };
+		2C20DAE21F77836A003FC9A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C20DAE11F77836A003FC9A3 /* ViewController.swift */; };
+		2C20DAE51F77836A003FC9A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C20DAE31F77836A003FC9A3 /* Main.storyboard */; };
+		2C20DAE71F77836A003FC9A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C20DAE61F77836A003FC9A3 /* Assets.xcassets */; };
+		2C20DAEA1F77836A003FC9A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C20DAE81F77836A003FC9A3 /* LaunchScreen.storyboard */; };
+		C98830EDD72C599B040CE5CB /* Pods_RecordButtonDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E94BB47BE2C67719086CBB /* Pods_RecordButtonDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08E94BB47BE2C67719086CBB /* Pods_RecordButtonDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecordButtonDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		221C4D9054649F275428F630 /* Pods-RecordButtonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButtonDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButtonDemo/Pods-RecordButtonDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2C20DADC1F77836A003FC9A3 /* RecordButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C20DADF1F77836A003FC9A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C20DAE11F77836A003FC9A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C20DAE41F77836A003FC9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C20DAE61F77836A003FC9A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C20DAE91F77836A003FC9A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C20DAEB1F77836A003FC9A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E17092D20214771DBF4CC2F /* Pods-RecordButtonDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordButtonDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordButtonDemo/Pods-RecordButtonDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C20DAD91F77836A003FC9A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98830EDD72C599B040CE5CB /* Pods_RecordButtonDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041D8F033DCD2753D8FBF46F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08E94BB47BE2C67719086CBB /* Pods_RecordButtonDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C20DAD31F77836A003FC9A3 = {
+			isa = PBXGroup;
+			children = (
+				2C20DADE1F77836A003FC9A3 /* RecordButtonDemo */,
+				2C20DADD1F77836A003FC9A3 /* Products */,
+				C436276EA8037F649D3FA005 /* Pods */,
+				041D8F033DCD2753D8FBF46F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C20DADD1F77836A003FC9A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C20DADC1F77836A003FC9A3 /* RecordButtonDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C20DADE1F77836A003FC9A3 /* RecordButtonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2C20DADF1F77836A003FC9A3 /* AppDelegate.swift */,
+				2C20DAE11F77836A003FC9A3 /* ViewController.swift */,
+				2C20DAE31F77836A003FC9A3 /* Main.storyboard */,
+				2C20DAE61F77836A003FC9A3 /* Assets.xcassets */,
+				2C20DAE81F77836A003FC9A3 /* LaunchScreen.storyboard */,
+				2C20DAEB1F77836A003FC9A3 /* Info.plist */,
+			);
+			path = RecordButtonDemo;
+			sourceTree = "<group>";
+		};
+		C436276EA8037F649D3FA005 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				221C4D9054649F275428F630 /* Pods-RecordButtonDemo.debug.xcconfig */,
+				6E17092D20214771DBF4CC2F /* Pods-RecordButtonDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C20DADB1F77836A003FC9A3 /* RecordButtonDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C20DAEE1F77836A003FC9A3 /* Build configuration list for PBXNativeTarget "RecordButtonDemo" */;
+			buildPhases = (
+				988C220603BAEF72E1A71B02 /* [CP] Check Pods Manifest.lock */,
+				2C20DAD81F77836A003FC9A3 /* Sources */,
+				2C20DAD91F77836A003FC9A3 /* Frameworks */,
+				2C20DADA1F77836A003FC9A3 /* Resources */,
+				659191B0BC2F763558DA1D1A /* [CP] Embed Pods Frameworks */,
+				03DF87352C354042C0D99FCD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecordButtonDemo;
+			productName = RecordButtonDemo;
+			productReference = 2C20DADC1F77836A003FC9A3 /* RecordButtonDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C20DAD41F77836A003FC9A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = okaris;
+				TargetAttributes = {
+					2C20DADB1F77836A003FC9A3 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2C20DAD71F77836A003FC9A3 /* Build configuration list for PBXProject "RecordButtonDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C20DAD31F77836A003FC9A3;
+			productRefGroup = 2C20DADD1F77836A003FC9A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C20DADB1F77836A003FC9A3 /* RecordButtonDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C20DADA1F77836A003FC9A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C20DAEA1F77836A003FC9A3 /* LaunchScreen.storyboard in Resources */,
+				2C20DAE71F77836A003FC9A3 /* Assets.xcassets in Resources */,
+				2C20DAE51F77836A003FC9A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03DF87352C354042C0D99FCD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecordButtonDemo/Pods-RecordButtonDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		659191B0BC2F763558DA1D1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RecordButtonDemo/Pods-RecordButtonDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PRTween/PRTween.framework",
+				"${BUILT_PRODUCTS_DIR}/RecordButton/RecordButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PRTween.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RecordButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecordButtonDemo/Pods-RecordButtonDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		988C220603BAEF72E1A71B02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecordButtonDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C20DAD81F77836A003FC9A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C20DAE21F77836A003FC9A3 /* ViewController.swift in Sources */,
+				2C20DAE01F77836A003FC9A3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C20DAE31F77836A003FC9A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C20DAE41F77836A003FC9A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C20DAE81F77836A003FC9A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C20DAE91F77836A003FC9A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C20DAEC1F77836A003FC9A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C20DAED1F77836A003FC9A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C20DAEF1F77836A003FC9A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 221C4D9054649F275428F630 /* Pods-RecordButtonDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH64JAYUW5;
+				INFOPLIST_FILE = RecordButtonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okaris.RecordButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C20DAF01F77836A003FC9A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E17092D20214771DBF4CC2F /* Pods-RecordButtonDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH64JAYUW5;
+				INFOPLIST_FILE = RecordButtonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.okaris.RecordButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C20DAD71F77836A003FC9A3 /* Build configuration list for PBXProject "RecordButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C20DAEC1F77836A003FC9A3 /* Debug */,
+				2C20DAED1F77836A003FC9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C20DAEE1F77836A003FC9A3 /* Build configuration list for PBXNativeTarget "RecordButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C20DAEF1F77836A003FC9A3 /* Debug */,
+				2C20DAF01F77836A003FC9A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C20DAD41F77836A003FC9A3 /* Project object */;
+}
