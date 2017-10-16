@@ -244,7 +244,7 @@ public class RecordButton: UIButton {
   }
 
 
-  open func didTouchDown(){
+  @objc open func didTouchDown(){
     if(self.buttonState != .recording) {
       self.buttonState = .recording
       if playSounds {
@@ -276,7 +276,6 @@ public class RecordButton: UIButton {
    */
   open func setProgress(_ newProgress: CGFloat) {
     progressLayer.strokeEnd = newProgress
-    print("Progress:",newProgress)
   }
 
 }
