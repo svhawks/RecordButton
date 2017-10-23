@@ -19,6 +19,9 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
+      self.recordButton.buttonColor = .yellow
+    }
   }
 
   @IBAction func recordButtonTapped(button: RecordButton){

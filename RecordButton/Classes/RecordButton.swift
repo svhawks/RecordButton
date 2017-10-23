@@ -22,9 +22,17 @@ public class RecordButton: UIButton {
 
   open var buttonColor: UIColor! = .red{
     didSet {
-      circleBorder.borderColor = buttonColor.cgColor
+      setNeedsDisplay()
     }
   }
+
+  open var borderColor: UIColor! = .white{
+    didSet {
+      circleBorder.borderColor = buttonColor.cgColor
+      setNeedsDisplay()
+    }
+  }
+
   open var progressColor: UIColor!  = .red {
     didSet {
       gradientMaskLayer.colors = [progressColor.cgColor, progressColor.cgColor]
@@ -57,7 +65,7 @@ public class RecordButton: UIButton {
         //  Animate from one state to another (either 0 -> 1 or 1 -> 0)
         let period = PRTweenPeriod.period(withStartValue: isRecordingScale,
                                           endValue: buttonState == .recording ? 0.0 : 1.0,
-                                          duration: 0.5) as! PRTweenPeriod
+                                          duration: 0.15) as! PRTweenPeriod
 
         tweenOperation = PRTween.sharedInstance().add(period, update: { (p) in
           self.isRecordingScale = p!.tweenedValue
@@ -157,7 +165,8 @@ public class RecordButton: UIButton {
     let pressed = isHighlighted || isTracking
 
     RecordButtonKit.drawRecordButton(frame: buttonFrame,
-                                     recordButtonFrameColor: UIColor.white,
+                                     recordButtonFrameColor: buttonColor,
+                                     recordButtonColor: buttonColor,
                                      isRecording: isRecordingScale,
                                      isPressed: pressed)
   }

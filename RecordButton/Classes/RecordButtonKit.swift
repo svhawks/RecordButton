@@ -2,25 +2,12 @@ import UIKit
 
 public class RecordButtonKit : NSObject {
 
-  //// Cache
-
-  private struct Cache {
-    static let recordButtonColor: UIColor = UIColor(red: 1.000, green: 0.000, blue: 0.000, alpha: 1.000)
-    static let recordButtonHighlightedColor: UIColor = RecordButtonKit.recordButtonColor.withBrightness(0.3)
-    static let recordFrameColor: UIColor = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1.000)
-    static let recordButtonNormalColor: UIColor = RecordButtonKit.recordButtonColor
-  }
-
-  //// Colors
-
-  @objc public dynamic class var recordButtonColor: UIColor { return Cache.recordButtonColor }
-  @objc public dynamic class var recordButtonHighlightedColor: UIColor { return Cache.recordButtonHighlightedColor }
-  @objc public dynamic class var recordFrameColor: UIColor { return Cache.recordFrameColor }
-  @objc public dynamic class var recordButtonNormalColor: UIColor { return Cache.recordButtonNormalColor }
-
   //// Drawing Methods
 
-  @objc public dynamic class func drawRecordButton(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 100, height: 100), resizing: ResizingBehavior = .aspectFit, recordButtonFrameColor: UIColor = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1.000), isRecording: CGFloat = 1, isPressed: Bool = false) {
+  @objc public dynamic class func drawRecordButton(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 100, height: 100), resizing: ResizingBehavior = .aspectFit, recordButtonFrameColor: UIColor = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1.000), recordButtonColor: UIColor = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1.000),  isRecording: CGFloat = 1,  isPressed: Bool = false) {
+
+    let recordButtonHighlightedColor = recordButtonColor.withBrightness(0.3)
+
     //// General Declarations
     let context = UIGraphicsGetCurrentContext()!
 
@@ -35,7 +22,7 @@ public class RecordButtonKit : NSObject {
     //// Variable Declarations
     let radius: CGFloat = 10 + 37 * min(isRecording * 1.88, 1)
     let buttonScale: CGFloat = 1 - (1 - isRecording) * 0.45
-    let buttonFillColor = isPressed ? RecordButtonKit.recordButtonHighlightedColor : RecordButtonKit.recordButtonNormalColor
+    let buttonFillColor = isPressed ? recordButtonHighlightedColor : recordButtonColor
 
     //// Rectangle Drawing
     context.saveGState()
