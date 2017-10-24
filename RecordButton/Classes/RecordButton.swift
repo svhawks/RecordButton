@@ -9,7 +9,6 @@ import PRTween
 @IBDesignable
 public class RecordButton: UIButton {
 
-
   private weak var tweenOperation : PRTweenOperation?
   private var startPlayer : AVAudioPlayer?
   private var stopPlayer : AVAudioPlayer?
@@ -20,20 +19,20 @@ public class RecordButton: UIButton {
     }
   }
 
-  open var buttonColor: UIColor! = .red{
+  @IBInspectable open var buttonColor: UIColor! = .red {
     didSet {
       setNeedsDisplay()
     }
   }
 
-  open var borderColor: UIColor! = .white{
+  @IBInspectable open var borderColor: UIColor! = .white {
     didSet {
-      circleBorder.borderColor = buttonColor.cgColor
+      circleBorder.borderColor = borderColor.cgColor
       setNeedsDisplay()
     }
   }
 
-  open var progressColor: UIColor!  = .red {
+  @IBInspectable open var progressColor: UIColor!  = .red {
     didSet {
       gradientMaskLayer.colors = [progressColor.cgColor, progressColor.cgColor]
     }
@@ -77,15 +76,13 @@ public class RecordButton: UIButton {
     }
 
   }
-  
 
-  @IBInspectable open var playSounds = true
+  @IBInspectable open var playSounds: Bool = true
 
   fileprivate var circleBorder: CALayer!
   fileprivate var progressLayer: CAShapeLayer!
   fileprivate var gradientMaskLayer: CAGradientLayer!
   fileprivate var currentProgress: CGFloat! = 0
-
 
   override public init(frame: CGRect) {
 
@@ -181,7 +178,6 @@ public class RecordButton: UIButton {
     }
   }
 
-
   fileprivate func setRecording(_ recording: Bool) {
 
     let duration: TimeInterval = 0.15
@@ -209,7 +205,7 @@ public class RecordButton: UIButton {
     borderColor.duration = duration
     borderColor.fillMode = kCAFillModeForwards
     borderColor.isRemovedOnCompletion = false
-    borderColor.toValue = recording ? UIColor(red: 0.83, green: 0.86, blue: 0.89, alpha: 1).cgColor : buttonColor
+    borderColor.toValue = recording ? self.borderColor.cgColor : buttonColor
 
     let borderScale = CABasicAnimation(keyPath: "transform.scale")
     borderScale.fromValue = recording ? 1.0 : 0.88
@@ -251,7 +247,6 @@ public class RecordButton: UIButton {
     circleBorder.position = CGPoint(x: self.bounds.midX,y: self.bounds.midY)
     super.layoutSubviews()
   }
-
 
   @objc open func didTouchDown(){
     if(self.buttonState != .recording) {
