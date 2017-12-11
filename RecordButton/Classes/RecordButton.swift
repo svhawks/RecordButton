@@ -32,6 +32,13 @@ public class RecordButton: UIButton {
     }
   }
 
+  @IBInspectable open var borderWidth: CGFloat! = 6 {
+    didSet {
+      circleBorder.borderWidth = borderWidth
+      setNeedsDisplay()
+    }
+  }
+
   @IBInspectable open var progressColor: UIColor!  = .red {
     didSet {
       gradientMaskLayer.colors = [progressColor.cgColor, progressColor.cgColor]
@@ -131,30 +138,30 @@ public class RecordButton: UIButton {
     self.backgroundColor = UIColor.clear
     let layer = self.layer
 
-    circleBorder = CALayer()
-    circleBorder.backgroundColor = UIColor.clear.cgColor
-    circleBorder.borderWidth = 1
-    circleBorder.borderColor = UIColor.white.cgColor
-    circleBorder.bounds = CGRect(x: 0, y: 0, width: self.bounds.size.width - 1.5, height: self.bounds.size.height - 1.5)
-    circleBorder.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-    circleBorder.position = CGPoint(x: self.bounds.midX,y: self.bounds.midY)
-    circleBorder.cornerRadius = self.frame.size.width / 2
-    layer.insertSublayer(circleBorder, at: 0)
-
     let startAngle: CGFloat = CGFloat(Double.pi) + CGFloat(Double.pi / 2)
     let endAngle: CGFloat = CGFloat(Double.pi) * 3 + CGFloat(Double.pi / 2)
     let centerPoint: CGPoint = CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height / 2)
     gradientMaskLayer = self.gradientMask()
     progressLayer = CAShapeLayer()
-    progressLayer.path = UIBezierPath(arcCenter: centerPoint, radius: self.frame.size.width / 2 - 2, startAngle: startAngle, endAngle: endAngle, clockwise: true).cgPath
+    progressLayer.path = UIBezierPath(arcCenter: centerPoint, radius: self.frame.size.width / 2 - self.borderWidth / 2, startAngle: startAngle, endAngle: endAngle, clockwise: true).cgPath
     progressLayer.backgroundColor = UIColor.clear.cgColor
     progressLayer.fillColor = nil
     progressLayer.strokeColor = UIColor.black.cgColor
-    progressLayer.lineWidth = 4.0
+    progressLayer.lineWidth = self.borderWidth
     progressLayer.strokeStart = 0.0
     progressLayer.strokeEnd = 0.0
     gradientMaskLayer.mask = progressLayer
     layer.insertSublayer(gradientMaskLayer, at: 0)
+
+    circleBorder = CALayer()
+    circleBorder.backgroundColor = UIColor.clear.cgColor
+    circleBorder.borderWidth = self.borderWidth
+    circleBorder.borderColor = UIColor.white.cgColor
+    circleBorder.bounds = CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height)
+    circleBorder.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+    circleBorder.position = CGPoint(x: self.bounds.midX,y: self.bounds.midY)
+    circleBorder.cornerRadius = self.frame.size.width / 2
+    layer.insertSublayer(circleBorder, at: 0)
   }
 
   override public func draw(_ rect: CGRect) {
@@ -207,9 +214,9 @@ public class RecordButton: UIButton {
     borderColor.isRemovedOnCompletion = false
     borderColor.toValue = recording ? self.borderColor.cgColor : buttonColor
 
-    let borderScale = CABasicAnimation(keyPath: "transform.scale")
-    borderScale.fromValue = recording ? 1.0 : 0.88
-    borderScale.toValue = recording ? 0.88 : 1.0
+    let borderScale = CABasicAnimation(keyPath: "opacity")
+    borderScale.fromValue = recording ? 1.0 : 0.0
+    borderScale.toValue = recording ? 0.0 : 1.0
     borderScale.duration = duration
     borderScale.fillMode = kCAFillModeForwards
     borderScale.isRemovedOnCompletion = false
@@ -228,7 +235,7 @@ public class RecordButton: UIButton {
     fade.isRemovedOnCompletion = false
 
     progressLayer.add(fade, forKey: "fade")
-    circleBorder.add(borderAnimations, forKey: "borderAnimations")
+    //circleBorder.add(borderAnimations, forKey: "borderAnimations")
 
   }
 
